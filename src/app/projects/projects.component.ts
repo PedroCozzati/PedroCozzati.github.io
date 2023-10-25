@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-projects',
@@ -6,9 +7,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
+  showProjects:any
+  constructor(
+    private breakpointObserver: BreakpointObserver,
+  ) {
+    // detect screen size changes
+    this.breakpointObserver.observe([
+      "(max-width: 1720px)"
+    ]).subscribe((result: BreakpointState) => {
+      if (result.matches) {
+          this.showProjects =false
+      } else {
+         this.showProjects =true
+      }
+    });
+  }
+
 
   items =[
-  
+    {
+      title:"Java Sprint Boot",
+      image:"https://www.ibm.com/content/dam/adobe-cms/instana/media_logo/Spring.component.complex-narrative-xl.ts=1690565631163.png/content/adobe-cms/br/pt/products/instana/supported-technologies/spring-boot-performance-monitoring/_jcr_content/root/table_of_contents/body/content_section_styled/content-section-body/complex_narrative/logoimage",
+      description:"Crud basico para treinamento",
+      link:'https://github.com/PedroCozzati/Java-Spring-Boot-Alura'
+    },
     {
       title:"Manipulação de dados com python",
       image:"https://spectrum.ieee.org/media-library/the-python-logo-on-top-of-imagery-representing-dna-sequencing-or-other-data.jpg?id=33364099&width=1200&height=900",

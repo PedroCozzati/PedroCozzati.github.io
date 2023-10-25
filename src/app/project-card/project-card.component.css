@@ -1,8 +1,8 @@
 .card {
     overflow: visible;
-    width: 200px;
-    height: 454px;
-    margin-top: 100px;
+    width: 150px;
+    height: 354px;
+    margin-top: 2vh;
     animation: image3 0.6s 0.2s ease backwards;
   }
   

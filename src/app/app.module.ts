@@ -8,19 +8,24 @@ import { CardComponent } from './card/card.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 
+import { CarouselModule } from '@coreui/angular';
+import { IconModule, IconSetService } from '@coreui/icons-angular';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CardComponent,
     ProjectsComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,
+    IconModule,
+    CarouselModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [IconSetService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

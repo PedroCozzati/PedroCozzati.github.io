@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap");
+@import url('@coreui/coreui/dist/css/coreui.min.css');
+
 .about {
   position: fixed;
   z-index: 10;
@@ -220,7 +222,7 @@ body {
 }
 @media screen and (max-width: 799px) {
   .mainHeading__content {
-    min-height: 100%;
+    /* min-height: 100%; */
   }
 }
 .mainHeading__text {
@@ -229,9 +231,8 @@ body {
   background-color: rgba(224, 216, 216, 0.2);
   padding: 40px;
   max-width: 620px;
-  margin-top: 100px;
-  height: 250px;
-  width: 70%;
+  /* margin-top: 7vh; */
+  width: 60%;
   backdrop-filter: blur(8px);
   animation: text 0.8s 0.6s ease backwards;
   position: relative;

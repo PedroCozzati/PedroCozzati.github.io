@@ -197,14 +197,14 @@ body {
 
 .mainHeading {
   width: 100%;
-  height: 100vh;
+ 
   position: relative;
   padding: 0 40px;
   background-image: linear-gradient(to bottom, #04030a 30%, #0e111d 80% );
 }
 @media screen and (max-width: 799px) {
   .mainHeading {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 .mainHeading__content {
@@ -228,8 +228,9 @@ body {
   background-color: rgba(224, 216, 216, 0.2);
   padding: 40px;
   max-width: 620px;
-  margin-top: 100px;
+  /* margin-top: 7vh; */
   width: 70%;
+  margin-right: 20px !important;
   backdrop-filter: blur(8px);
   animation: text 0.8s 0.6s ease backwards;
   position: relative;
@@ -894,5 +895,88 @@ body {
       opacity: 1;
       transform: none;
     }
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f200;
+    box-shadow: 0px 0px 15px #00000027;
+    padding: 15px 10px;
+    border-radius: 5em;
+  }
+  
+  .social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px #00000027;
+    transition: 0.3s;
+  }
+  
+  .social-button:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 6px 3px #00000027;
+  }
+  
+  .social-buttons svg {
+    transition: 0.3s;
+    height: 20px;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  .facebook svg {
+    fill: #f2f2f2;
+  }
+  
+  .facebook:hover svg {
+    fill: #3b5998;
+  }
+  
+  .github {
+    background-color: #333;
+  }
+  
+  .github svg {
+    width: 25px;
+    height: 25px;
+    fill: #f2f2f2;
+  }
+  
+  .github:hover svg {
+    fill: #333;
+  }
+  
+  .linkedin {
+    background-color: #0077b5;
+  }
+  
+  .linkedin svg {
+    fill: #f2f2f2;
+  }
+  
+  .linkedin:hover svg {
+    fill: #0077b5;
+  }
+  
+  .instagram {
+    background-color: #c13584;
+  }
+  
+  .instagram svg {
+    fill: #f2f2f2;
+  }
+  
+  .instagram:hover svg {
+    fill: #c13584;
   }
   
