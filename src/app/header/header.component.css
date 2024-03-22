@@ -197,7 +197,7 @@ body {
 
 .mainHeading {
   width: 100%;
- 
+ height: 100vh;
   position: relative;
   padding: 0 40px;
   background-image: linear-gradient(to bottom, #04030a 30%, #0e111d 80% );
@@ -219,7 +219,7 @@ body {
 }
 @media screen and (max-width: 799px) {
   .mainHeading__content {
-    min-height: 100%;
+    /* min-height: 100%; */
   }
 }
 .mainHeading__text {
