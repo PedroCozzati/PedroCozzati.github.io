@@ -64,7 +64,7 @@
             <p class="mainHeading__description">
                 Durante esses 3 anos de experiência na área, desenvolvi alguns projetos diversos.<br>
 
-                Mais projetos no <a href='https://github.com/PedroCozzati?tab=repositories' target="_blank">
+                Mais projetos no <a href='https://github.com/PedroCozzati?tab=repositories' target="_blank" style="text-decoration: none;">
                     <i class="devicon-github-plain" style="font-size: 40px;"></i>
                 </a>
             </p>
@@ -76,7 +76,7 @@
              alt=""
         /> -->
         <div *ngIf="this.showProjects==false">
-            <c-carousel [interval]=3000>
+            <c-carousel [interval]=2000>
                 <c-carousel-inner>
                     <c-carousel-item style="margin-right: 2vw;"  *ngFor="let item of items" >
                             <app-project-card style="z-index: 2000;" [title]="item.title" [image]="item.image"
@@ -93,7 +93,7 @@
         </div>
         <div *ngIf="this.showProjects==true" style="display: flex;flex-direction: row;justify-content: space-around;padding: 2% !important;">
             <div *ngFor="let item of items" style="margin-top:10% ;padding: 2% !important;">
-                <app-project-card style="z-index: 2000" [title]="item.title" [image]="item.image" [description]="item.description" [link]="item.link">
+                <app-project-card  (mouseenter)="onMouseEnter($event)" style="z-index: 2000" [title]="item.title" [image]="item.image" [description]="item.description" [link]="item.link">
                 </app-project-card>
     
               </div>
