@@ -1,6 +1,6 @@
 # Portfólio
 
-Este projeto é um site estático desenvolvido para exibir projetos, habilidades e experiência.
+Este projeto é um site desenvolvido para exibir projetos, habilidades e experiência.
 
 ## Recursos
 
